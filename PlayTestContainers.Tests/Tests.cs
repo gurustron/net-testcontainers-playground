@@ -25,11 +25,11 @@ public class Tests
     [OneTimeTearDown]
     public async Task TearDown()
     {
-        await _postgres.StartAsync();
+        await _postgres.DisposeAsync();
     }
 
     [Test]
-    public async Task Test1()
+    public async Task RunDbInTestContainer()
     {
         var options = new DbContextOptionsBuilder<TestContainersAppContext>()
             .UseNpgsql(_postgres.GetConnectionString())

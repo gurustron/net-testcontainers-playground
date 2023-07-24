@@ -13,6 +13,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlayTestContainers.Runner",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlayTestContainers.Tests", "PlayTestContainers.Tests\PlayTestContainers.Tests.csproj", "{264E873A-D529-4AD1-90FB-7046BCD99476}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".github", ".github", "{CB95E503-2B6B-4823-ACB8-D9F05376ED5C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "workflows", "workflows", "{E9DF87C7-2B16-4895-9C31-B25498A6BB4D}"
+	ProjectSection(SolutionItems) = preProject
+		.github\workflows\dotnet-test.yml = .github\workflows\dotnet-test.yml
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -31,5 +38,9 @@ Global
 		{264E873A-D529-4AD1-90FB-7046BCD99476}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{264E873A-D529-4AD1-90FB-7046BCD99476}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{264E873A-D529-4AD1-90FB-7046BCD99476}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{CB95E503-2B6B-4823-ACB8-D9F05376ED5C} = {B92505F4-C55A-4998-8BC6-0DCC49E95739}
+		{E9DF87C7-2B16-4895-9C31-B25498A6BB4D} = {CB95E503-2B6B-4823-ACB8-D9F05376ED5C}
 	EndGlobalSection
 EndGlobal
